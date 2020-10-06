@@ -1,0 +1,25 @@
+using System;
+namespace LB1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string str;
+            double n, r, a, P;
+
+            Console.Write("Введікь кiлькiсть кутiв n-кутника: ");
+            
+            str = Console.ReadLine();
+            n = Convert.ToDouble(str);
+            Console.Write("Введiть радiус вписаного кола: ");
+            str = Console.ReadLine();
+            r = Convert.ToDouble(str);
+            
+            a = 2 * r * Math.Tan(Math.PI/n);
+            Console.WriteLine("Довжина сторони трикутника = " + a);
+            P = a * n;
+            Console.WriteLine("Периметр правильного n кутника = " + P);
+        }
+    }
+}
