@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace _Самостійна_робта_04._11._2020
+{
+    class Whisky
+    {
+        public int price;
+        public int age;
+        public string country;
+        public int strength;
+        public string Name;
+
+
+         List<Whisky> warehouse = new List<Whisky>();
+         
+        public void Add(int _price,int _age,string _country, int _strength, string _Name)
+        {
+            warehouse.Add(new Whisky {price = _price, age=_age, country = _country, strength=_strength, Name=_Name });
+        }
+        
+
+        public List<Whisky> ChooseWhisky(int price,int age, string country, int stren)
+        {
+            var wr = warehouse.Where(x => x.price == price && x.country == country && x.strength == stren).ToList();
+            if (wr.Count == 0)
+            {
+                Console.WriteLine("Виски с данными характеристиками отсутствует");
+            }
+            
+                return wr;
+            
+        }
+        public void Display(List<Whisky> l)
+        {
+            //l.ForEach(item =>
+            //{
+            //    Console.WriteLine($"Price {item.price}, Name {item.country}, Age {item.age}, Strength {item.strength}");
+            //});
+            foreach (var item in l)
+            {
+                Console.WriteLine($"Price {item.price}, Country {item.country}, Age {item.age}, Strength {item.strength}, Вам подойдет: {item.Name}");
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Whisky Warehouse = new Whisky();
+            Warehouse.Add(300, 3, "SWE", 40, "Hankey");
+            Warehouse.Add(568, 5, "CHE", 43, "Bushmills");
+            Warehouse.Add(900, 9, "DNK", 39, "Jim");
+            Warehouse.Add(999, 4, "SRB", 40, "Jack");
+            Warehouse.Add(1200, 8, "USA", 48, "Johnnie");
+
+            Console.WriteLine("Введите страну:");
+            string country = Console.ReadLine();
+            Console.WriteLine("Введите выдержку:");
+            int age = Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Введите крепость:" );
+            int strength = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите цену:");
+            int price = Convert.ToInt32(Console.ReadLine());
+
+            Warehouse.Display(Warehouse.ChooseWhisky(price, age, country, strength));
+
+
+        }
+    }
+}
