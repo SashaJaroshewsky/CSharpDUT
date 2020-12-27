@@ -1,0 +1,32 @@
+using System;
+
+namespace LB3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string a1, b2, c3;
+            int a, b, c;
+            Console.WriteLine("Введите первое число");
+            a1 = Console.ReadLine();
+            a = Convert.ToInt32(a1);
+
+            Console.WriteLine("Введите второе число");
+            b2 = Console.ReadLine();
+            b = Convert.ToInt32(b2);
+
+            Console.WriteLine("Введите третье число");
+            c3 = Console.ReadLine();
+            c = Convert.ToInt32(c3);
+            if (a==b || b==c || c == a)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+        }
+    }
+}
