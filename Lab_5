@@ -1,0 +1,111 @@
+using System;
+
+namespace LB5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Объявляем двумерный массив
+            int n, m;
+            string a, b, c;
+            Console.WriteLine("Введите m");
+            a = Console.ReadLine();
+            m = Convert.ToInt32(a);
+            Console.WriteLine("Введите n");
+            b = Console.ReadLine();
+            n = Convert.ToInt32(b);
+            int[,] myArr = new int[m, n];
+
+            
+
+            // Инициализируем данный массив
+            for (int i = 0; i < m; i++){
+                for (int j = 0; j < n; j++)
+                {
+                    c = Console.ReadLine();
+                    myArr[i, j] = Convert.ToInt32(c);   
+                }    
+            }
+            for (int i = 0; i < m; i++){
+                for (int j = 0; j < n; j++)
+                {
+                    Console.Write(myArr[i,j]);
+                }
+                Console.WriteLine();
+            }
+            int min = myArr[0, 0], max = myArr[0, 0], r=0, s=0, r1=0, s1=0;
+
+
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (myArr[i, j] < min)
+                    {
+                        min = myArr[i, j];
+                        r = i;
+                        s = j;
+                    }
+                }
+            }
+            Console.WriteLine("min = "+ min);
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (myArr[i, j] > max)
+                    {
+                        max = myArr[i, j];
+                        r1 = i;
+                        s1 = j;
+                    }
+                }
+            }
+            Console.WriteLine("max = " + max);
+
+            int[] myArr2 = new int[n];
+            int[] myArr3 = new int[m];
+
+            for (int i = 0; i < n; i++)
+            {
+                myArr2[i] = myArr[r, i];
+            }
+            Console.WriteLine("Рядок з min :");
+            for (int i = 0; i < m; i++)
+            {
+                Console.Write(myArr2[i]); ;
+            }
+            Console.WriteLine();
+            for (int i = 0; i < m; i++)
+            {
+                myArr3[i] = myArr[i, s];
+            }
+            Console.WriteLine("Стовпчик з min :");
+            for (int i = 0; i <n; i++)
+            {
+                Console.WriteLine(myArr3[i]); ;
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                myArr3[i] = myArr[r1, i];
+            }
+            Console.WriteLine("Рядок з max :");
+            for (int i = 0; i < m; i++)
+            {
+                Console.Write(myArr3[i]); ;
+            }
+            Console.WriteLine();
+            for (int i = 0; i < m; i++)
+            {
+                myArr3[i] = myArr[i, s1];
+            }
+            Console.WriteLine("Стовпчик з max :");
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine(myArr3[i]); ;
+            }
+        }
+    }
+}
