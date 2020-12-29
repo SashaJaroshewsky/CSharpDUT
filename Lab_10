@@ -1,0 +1,29 @@
+using System;
+using System.Linq;
+
+namespace LB10
+{
+    public static class Extension
+    {
+        public static double GetSumAvarage(this int[] array) => array.Average();
+        public static double GetMultiAvarage(this int[] array)
+        {
+            double result = 1;
+            foreach (var item in array)
+            {
+                result *= item;
+            }
+            return result / array.Length;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            var array = new int[] { 4, 6, 69, 78, 7879 };
+            Console.WriteLine($"Среднее арифметическое значение - {array.GetSumAvarage()}");
+            Console.WriteLine($"Среднее геометрическое значение - {array.GetMultiAvarage()}");
+        }
+    }
+}
