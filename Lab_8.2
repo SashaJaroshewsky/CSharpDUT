@@ -1,0 +1,123 @@
+﻿using System;
+using System.Collections.Generic;
+namespace Laba_8_inheritance
+{
+    class DiscTelephone
+    {
+        protected string telNumber = "230-77-74";
+        protected List<string> availableNumbers = new List<string> {
+            "0","1","2","3","4","5","6","7","8","9"
+        };
+        protected void makeCall()
+        {
+            Console.WriteLine("You called successfully");
+        }
+        protected void takeCall()
+        {
+            Console.WriteLine("you have successfully accepted the call");
+        }
+    }
+    class ButtonPhone : DiscTelephone
+    {
+        protected ButtonPhone()
+        {
+            availableNumbers.AddRange(new List<string>
+            {
+                "*","#"
+            });
+        }
+        protected void printTelNumber()
+        {
+            Console.WriteLine("123456789");
+        }
+    }
+    class BlackWhitePhone : ButtonPhone
+    {
+        protected BlackWhitePhone()
+        {
+            availableNumbers.AddRange(new List<string>
+            {
+                "@","$","%","&","(",")"
+            });
+        }
+        protected string resulution { get; set; }
+        protected string screenSize { get; set; }
+        protected string colorPhone { get; set; }
+        private void sendSmS()
+        {
+            Console.WriteLine("You have successfully sent an sms");
+        }
+        private void takeSmS()
+        {
+            Console.WriteLine("You have successfully take an sms");
+        }
+    }
+    class ColorPhone : BlackWhitePhone
+    {
+        protected int countOfColors { get; set; }
+        protected bool twoSim = true;
+        protected string secondNumber { get; set; }
+        protected void sendMMS_firstSim()
+        {
+            Console.WriteLine("You have successfully sent an MMS");
+        }
+        protected void takeMMS_firstSim()
+        {
+            Console.WriteLine("You have successfully take an MMS");
+        }
+        protected void sendMMS_secondSim()
+        {
+            Console.WriteLine("You have successfully sent an MMS");
+        }
+        protected void takeMMS_secondSim()
+        {
+            Console.WriteLine("You have successfully take an MMS");
+        }
+        protected void makeCall_secondSim()
+        {
+            Console.WriteLine("You have successfully sent an MMS");
+        }
+        protected void takeCall_secondSim()
+        {
+            Console.WriteLine("You have successfully take an MMS");
+        }
+        protected void makeCall_firstSim()
+        {
+            Console.WriteLine("You have successfully sent an MMS");
+        }
+        protected void takeCall_firstSim()
+        {
+            Console.WriteLine("You have successfully take an MMS");
+        }
+    }
+    class Smartphone
+    {
+        protected bool SensorDisplay = true;
+        protected int maxCountOfTouches { get; set; }
+        protected int countOfCameras { get; set; }
+        protected void makePhoto_firstCam()
+        {
+            Console.WriteLine("Shot");
+        }
+        protected void makePhoto_second()
+        {
+            Console.WriteLine("Shot");
+        }
+        protected void recordVideo_firstCam()
+        {
+            Console.WriteLine("Recording video ...");
+        }
+        protected void recordVideo_second()
+        {
+            Console.WriteLine("Recording video ...");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}
