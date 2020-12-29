@@ -1,0 +1,114 @@
+using System;
+using System.Collections.Generic;
+namespace Laba_8
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int MenuChoose, CarChoose;
+            string name, color;
+            int Year, maxSpeed, N;
+            List<Garage> garage = new List<Garage>();
+            garage.Add(new Car("Mercedes GT-63 S", "Black matte", 2019, 360));
+            garage.Add(new Car("Nissan GT-R", "Red matte", 2018, 350));
+            garage.Add(new Car("Porsche Panamera", "Black", 2020, 325));
+            garage.Add(new Car("Volvo XC 90", "Grey", 2021, 250));
+            garage.Add(new Car("Infiniti Q 60 Project S", "Black", 2020, 340));
+            do
+            {
+                Console.WriteLine("Меню: ");
+                Console.WriteLine("Информация об автомобилях - 1");
+                Console.WriteLine("Добавить новую машину - 2");
+                Console.WriteLine("Удалить машину - 3");
+                Console.WriteLine("Возьмите машину для езды - 4");
+                Console.WriteLine("Exit - 0");
+                MenuChoose = Convert.ToInt32(Console.ReadLine());
+                switch (MenuChoose)
+                {
+                    case 1:
+                        Console.Clear();
+                        for (int i = 0; i < garage.Count; i++)
+                        {
+                            Console.Write(i + 1 + ": ");
+                            garage[i].GetInfo();
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter name of the car");
+                        name = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine("Enter color of the car");
+                        color = Convert.ToString(Console.ReadLine());
+                        Console.WriteLine("Enter year of the car");
+                        Year = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter max speed the of car");
+                        maxSpeed = Convert.ToInt32(Console.ReadLine());
+                        garage.Add(new Car(name, color, Year, maxSpeed));
+                        Console.WriteLine("Car added");
+                        break;
+                    case 3:
+                        Console.Write("Введите номер автомобиля который вы хотите удалить:");
+                        do
+                        {
+                            N = Convert.ToInt32(Console.ReadLine());
+                            if (N < 1 || N > garage.Count)
+                            {
+                                Console.WriteLine("Incorrect input, try again:");
+                            }
+                        } while (N < 1 || N > garage.Count);
+                        garage.RemoveAt(N - 1);
+                        Console.Clear();
+                        Console.WriteLine("Car deleted\n");
+                        break;
+                    case 4:
+                        Console.Write("Enter the car number you want to select ");
+                        do
+                        {
+                            CarChoose = Convert.ToInt32(Console.ReadLine());
+                            if (CarChoose < 1 || CarChoose > garage.Count)
+                            {
+                                Console.WriteLine("Incorrect input, try again:");
+                            }
+                        } while (CarChoose < 1 || CarChoose > garage.Count);
+                        garage[CarChoose - 1].GetInfo();
+                        Console.WriteLine("Nice choose, happy riding!");
+                        Console.WriteLine("Glad to see you again");
+                        break;
+                    default:
+                        Console.Clear();
+                        if (MenuChoose != 0) Console.WriteLine("incorrect input");
+                        break;
+                }
+            } while (MenuChoose != 0);
+            Console.Clear();
+            Console.WriteLine("Thank you!\nSee you later:)");
+        }
+    }
+    class Car : Garage
+    {
+        private string name;
+        private string color;
+        private int Year, maxSpeed;
+
+        public Car(string name, string color, int Year, int maxSpeed)
+        {
+            this.name = name;
+            this.color = color;
+            this.Year = Year;
+            this.maxSpeed = maxSpeed;
+        }
+
+        public override void GetInfo()
+        {
+            Console.WriteLine($"Car name: {name}\nColor: {color}\nYear: {Year}\nMax speed: {maxSpeed}\n");
+        }
+    }
+    class Garage
+    {
+        List<Car> garage = new List<Car>();
+
+
+        public virtual void GetInfo() { }
+    }
+}
