@@ -1,0 +1,10 @@
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\bin\Debug\Sem2_LB2.exe.config
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\bin\Debug\Sem2_LB2.exe
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\bin\Debug\Sem2_LB2.pdb
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.csprojAssemblyReference.cache
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.Form1.resources
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.Properties.Resources.resources
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.csproj.GenerateResource.cache
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.csproj.CoreCompileInputs.cache
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.exe
+D:\Study\С#\Sem2\Sem2_LB2\Sem2_LB2\obj\Debug\Sem2_LB2.pdb
