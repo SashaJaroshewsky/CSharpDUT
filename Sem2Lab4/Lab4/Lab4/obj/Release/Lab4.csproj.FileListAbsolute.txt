@@ -1,0 +1,15 @@
+D:\Study\С#\Sem2\Lab4\Lab4\bin\Release\Lab4.exe.config
+D:\Study\С#\Sem2\Lab4\Lab4\bin\Release\Lab4.exe
+D:\Study\С#\Sem2\Lab4\Lab4\bin\Release\Lab4.pdb
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.csprojAssemblyReference.cache
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\MainWindow.g.cs
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\App.g.cs
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4_MarkupCompile.cache
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4_MarkupCompile.lref
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\MainWindow.baml
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.g.resources
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.Properties.Resources.resources
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.csproj.GenerateResource.cache
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.csproj.CoreCompileInputs.cache
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.exe
+D:\Study\С#\Sem2\Lab4\Lab4\obj\Release\Lab4.pdb
