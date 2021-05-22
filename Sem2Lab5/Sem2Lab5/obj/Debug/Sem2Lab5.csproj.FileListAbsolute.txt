@@ -1,0 +1,15 @@
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\bin\Debug\Sem2Lab5.exe.config
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\bin\Debug\Sem2Lab5.exe
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\bin\Debug\Sem2Lab5.pdb
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.csprojAssemblyReference.cache
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\MainWindow.g.cs
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\App.g.cs
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5_MarkupCompile.cache
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5_MarkupCompile.lref
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\MainWindow.baml
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.g.resources
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.Properties.Resources.resources
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.csproj.GenerateResource.cache
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.csproj.CoreCompileInputs.cache
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.exe
+D:\Study\С#\Sem2\Sem2Lab5\Sem2Lab5\obj\Debug\Sem2Lab5.pdb
